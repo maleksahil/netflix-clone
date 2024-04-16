@@ -10,7 +10,7 @@ body{
 .main {
     background-image: url("netflix\ background.jpg");
     background-position: center center;
-    background-size: max(1200px, 100vw);
+    background-size: cover;
     background-repeat: no-repeat;
     height: 170vh;
     position: relative;
@@ -22,7 +22,6 @@ body{
     width: 100%;
     opacity: 0.74;
     background-color: black;
-  x;
     position: absolute;
     top: 0;
 
@@ -94,8 +93,11 @@ nav button {
 
 .btn{
     padding: 3px 8px;
-    font-weight: bold;
-    background-color: white;
+    font-weight: 400;
+    background-color: rgba(248, 243, 243, 0.78);
+    border-radius: 5px; 
+    border: 1px solid white;
+    cursor: pointer;
 }
 
 .btn-red{
@@ -108,6 +110,16 @@ nav button {
     height: 100%;
     width: 30%;
 }
+
+
+.btn-red-sm{
+    padding: 3px 24px;
+    background-color: red;
+    font-weight: bold;
+    color: white;
+    border-radius:5px;
+}
+
 
 .hero-buttons{
     display: flex;
@@ -132,9 +144,26 @@ nav button {
     border: 1px solid rgba(244, 236, 236, 0.5);
 }
 
-.btn-red-sm{
-    padding: 3px 24px;
-    background-color: red;
-    font-weight: bold;
+.first{
+    display: flex;
+    justify-content: center;
+    max-width: 70vw;
+    margin: auto;
     color: white;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.sec-img img{
+      width: 30vw;
+      position: relative;
+      z-index: 10;
+}
+    
+.sec-img video{
+    position: absolute;
+    top: 180vh;
+    right: 18vw;
+    width: 23vw;
 }
