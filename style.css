@@ -167,3 +167,28 @@ nav button {
     right: 18vw;
     width: 23vw;
 }
+section.first > div{
+    display: flex;
+    flex-direction: column;
+}
+
+.first > div :nth-child(1){
+    font-size: 48px;
+    font-weight: bolder;
+}
+
+.first > div:nth-child(2){
+    font-size: 48px;
+    font-weight: bolder;
+}
+
+#font1{
+    font-size: 48px;
+    font-weight: bolder;
+}
+
+#font2{
+    font-size: 24px;
+    font-weight: 500;
+    margin-top: 20px;
+}
